@@ -1,0 +1,10 @@
+
+
+/var/log/adin1100_init.log {
+    daily
+    rotate 7
+    compress
+    missingok
+    notifempty
+    create 644 root root
+}
