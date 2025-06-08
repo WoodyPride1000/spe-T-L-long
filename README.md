@@ -16,7 +16,7 @@ sudo apt update
 sudo apt install mdio-tools ethtool iproute2
 ```
 
-ファイル構成
+## ファイル構成
 
 adin1100_init.sh : 初期化スクリプト本体
 README.md : 本ドキュメント
@@ -26,7 +26,7 @@ logrotate_adin1100 : ログローテート設定例
 デフォルトで /var/log/adin1100_init.log にログを出力します。
 ログファイルの肥大化防止には、付属の logrotate_adin1100 設定ファイルを /etc/logrotate.d/ に配置してください。
 
-起動方法
+## 起動方法
 
 標準実行例
 ```
@@ -44,14 +44,14 @@ sudo ./adin1100_init.sh eth0 0 1
 ./adin1100_init.sh --dry-run eth0 0
 ```
 
-注意点
+## 注意点
 
 スクリプトは root または相応の権限で実行してください。
 3kmを超えるケーブルではリピータの使用を推奨します。
 ログの出力先ディレクトリに書き込み権限が必要です。
 
 
-### 2. logrotate_adin1100（ログローテート設定例）
+### logrotate_adin1100（ログローテート設定例）
 
 ```bash
 /var/log/adin1100_init.log {
