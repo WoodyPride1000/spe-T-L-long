@@ -19,8 +19,11 @@ sudo apt install mdio-tools ethtool iproute2
 ## ファイル構成
 
 adin1100_init.sh : 初期化スクリプト本体
+
 README.md : 本ドキュメント
+
 logrotate_adin1100 : ログローテート設定例
+
 ログファイル
 
 デフォルトで /var/log/adin1100_init.log にログを出力します。
