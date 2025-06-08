@@ -6,7 +6,7 @@ IFACE="eth0"
 PHY_ADDR=0
 RETRY_MAX=3
 SNR_THRESHOLD=40
-TIMEOUT=20  # Increased for 3km
+TIMEOUT=20  # Increased for 2km
 LOGFILE="/var/log/adin1100_init.log"
 DRYRUN=0
 
